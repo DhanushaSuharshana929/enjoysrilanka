@@ -61,7 +61,7 @@ include ("./header.php");
 					<div class="bredcrums-content">
 						<h2>Contact</h2>
 						<ul>
-							<li><a href="index-2.html">Home</a></li>
+                                                    <li><a href="index.php">Home</a></li>
 							<li class="active"><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
@@ -82,15 +82,15 @@ include ("./header.php");
 				<div class="address">
 					<p>
 						<strong>Address</strong>
-						<br> Seventh Avenue New York <br /> Room 1201, Tecco Tower C Apartment <br /> Quang Trung Ward, NY City,  USA
+						<br> No. 03,  <br /> Sri Dewamiththa Road, <br />  Galle
 					</p>
 					<p>
 						<strong>Website</strong>
-						<br> trabble.com
+						<br> enjoysrilanka.synotec.lk
 					</p>
 					<p>
 						<strong>Email</strong>
-						<br> info@yourdomian.com
+						<br> mail@synotec.lk
 					</p>
 				</div>
 			</div>
@@ -127,11 +127,7 @@ include ("./header.php");
 </section>
 
 <!-- google map start  -->
-<div class="map-wrapper">
-	<div class="map-area">
-		<div id="googleMap"></div>
-	</div>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31688.528606332122!2d79.89150672248927!3d6.882688281689741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.914047999999999!2d79.89493759999999!4m5!1s0x3ae25bd97320a087%3A0xfa4766a56acdd267!2ssynotec!3m2!1d6.8513291999999995!2d79.9171495!5e0!3m2!1sen!2slk!4v1592805031512!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 <!-- google map end  -->
 

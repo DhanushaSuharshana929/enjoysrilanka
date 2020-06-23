@@ -171,7 +171,7 @@ include ("./header.php");
                             </div>
                             
                             <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="#">Book Now</a>
+                                <a href="view-tour-package.php">Read More</a>
                             </div>
                         </div>
 
@@ -193,7 +193,7 @@ include ("./header.php");
                                 </div>
                             </div>
                             <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="#">Book Now</a>
+                                <a href="view-tour-package.php">Read More</a>
                             </div>
                         </div>
 
@@ -216,7 +216,7 @@ include ("./header.php");
                                 </div>
                             </div>
                             <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="#">Book Now</a>
+                                <a href="view-tour-package.php">Read More</a>
                             </div>
                         </div>
 
@@ -239,7 +239,7 @@ include ("./header.php");
                                 </div>
                             </div>
                             <div class="package-long-btn hvr-shutter-out-horizontal">
-                                <a href="#">Book Now</a>
+                                <a href="view-tour-package.php">Read More</a>
                             </div>
                         </div>
                     </div> <!-- tour packages carosual end -->
@@ -260,70 +260,70 @@ include ("./header.php");
 		<div class="destination-slider-active owl-carousel">
 			<div class="single-destination">
 				<figure>
-                                    <a href="#"><img src="images/destination/yala.jpg" alt="">
+                                    <a href="view-destination.php"><img src="images/destination/yala.jpg" alt="">
 					</a>
 					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                            <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 					</figcaption>
 				</figure>
 				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>Sydney, Australia</a>
+                                    <a href="view-destination.php"><i class="fa fa-map-marker"></i>Sydney, Australia</a>
 					<h4>Opera House <span>3 Tours</span></h4>
 				</div>
 			</div> <!-- single popular destination  end-->
 
 			<div class="single-destination">
 				<figure>
-                                    <a href="#"><img src="images/destination/nilaveli.jpg" alt="">
+                                    <a href="view-destination.php"><img src="images/destination/nilaveli.jpg" alt="">
 					</a>
 					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                            <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 					</figcaption>
 				</figure>
 				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>London, Eangland</a>
+                                    <a href="view-destination.php"><i class="fa fa-map-marker"></i>London, Eangland</a>
 					<h4>Tower Bridge<span>5 Tours</span></h4>
 				</div>
 			</div> <!-- single popular destination  end-->
 
 			<div class="single-destination">
 				<figure>
-                                    <a href="#"><img src="images/destination/polonnaruwa.jpg" alt="">
+                                    <a href="view-destination.php"><img src="images/destination/polonnaruwa.jpg" alt="">
 					</a>
 					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                            <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 					</figcaption>
 				</figure>
 				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>Paris, France</a>
+                                    <a href="view-destination.php"><i class="fa fa-map-marker"></i>Paris, France</a>
 					<h4>Eiffel Tower<span>4 Tours</span></h4>
 				</div>
 			</div> <!-- single popular destination  end-->
 
 			<div class="single-destination">
 				<figure>
-                                    <a href="#"><img src="images/destination/nilaveli.jpg" alt="">
+                                    <a href="view-destination.php"><img src="images/destination/nilaveli.jpg" alt="">
 					</a>
 					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                            <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 					</figcaption>
 				</figure>
 				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>New york, USA</a>
+                                    <a href="view-destination.php"><i class="fa fa-map-marker"></i>New york, USA</a>
 					<h4>Statue Of Liberty<span>3 Tours</span></h4>
 				</div>
 			</div> <!-- single popular destination  end-->
 
 			<div class="single-destination">
 				<figure>
-                                    <a href="#"><img src="images/destination/yala.jpg" alt="">
+                                    <a href="view-destination.php"><img src="images/destination/yala.jpg" alt="">
 					</a>
 					<figcaption>
-						<a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                            <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
 					</figcaption>
 				</figure>
 				<div class="des-city">
-					<a href="#"><i class="fa fa-map-marker"></i>Agra, India</a>
+                                    <a href="view-destination.php"><i class="fa fa-map-marker"></i>Agra, India</a>
 					<h4>Tajmahal<span>5 Tours</span></h4>
 				</div>
 			</div> <!-- single popular destination  end-->

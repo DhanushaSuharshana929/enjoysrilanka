@@ -1566,10 +1566,10 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
      background: #2c3035;
 }
  .index-2 .header-bottom-area {
-     background: #ffffff;
+     background: #000;
 }
  .index-2 .header-bottom-area li a {
-     color: #727272;
+     color: #ffffff;
 }
  .index-2 .header-bottom-area .main-menu > li ul.dropdown {
      top: 100% !important;
@@ -3412,7 +3412,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
 }
 /*===================================================== 49.Home version 5 testimonial 5 section start here =======================================================*/
  .testimonial-area-5 {
-     background: #37b721 url("../images/bgimage/bea.jpg") no-repeat scroll center center/cover;
+     background: #37b721 url("../images/bgimage/beach.jpg") no-repeat scroll center center/cover;
      position: relative;
      overflow: hidden;
      padding: 100px 0;

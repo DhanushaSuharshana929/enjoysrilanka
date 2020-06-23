@@ -78,7 +78,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-package">
 					<div class="package-image">
-						<a href="#"><img src="images/packages/4.jpg" alt="">
+                                            <a href="view-tour-package.php"><img src="images/packages/4.jpg" alt="">
 						</a>
 					</div>
 					<div class="package-content">
@@ -88,7 +88,7 @@
 					</div>
 					<div class="package-calto-action">
 						<ul class="ct-action">
-							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                                    <li><a href="view-tour-package.php" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
 							</li>
 							<li>
 								
@@ -101,7 +101,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-package">
 					<div class="package-image">
-						<a href="#"><img src="images/packages/5.jpg" alt="">
+                                            <a href="view-tour-package.php"><img src="images/packages/5.jpg" alt="">
 						</a>
 					</div>
 					<div class="package-content">
@@ -111,7 +111,7 @@
 					</div>
 					<div class="package-calto-action">
 						<ul class="ct-action">
-							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                                    <li><a href="view-tour-package.php" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
 							</li>
 							<li>
 								
@@ -124,7 +124,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-package">
 					<div class="package-image">
-						<a href="#"><img src="images/packages/6.jpg" alt="">
+                                            <a href="view-tour-package.php"><img src="images/packages/6.jpg" alt="">
 						</a>
 					</div>
 					<div class="package-content">
@@ -134,7 +134,7 @@
 					</div>
 					<div class="package-calto-action">
 						<ul class="ct-action">
-							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                                    <li><a href="view-tour-package.php" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
 							</li>
 							<li>
 								
@@ -147,7 +147,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-package">
 					<div class="package-image">
-						<a href="#"><img src="images/packages/2.jpg" alt="">
+                                            <a href="view-tour-package.php"><img src="images/packages/2.jpg" alt="">
 						</a>
 					</div>
 					<div class="package-content">
@@ -157,7 +157,7 @@
 					</div>
 					<div class="package-calto-action">
 						<ul class="ct-action">
-							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                                    <li><a href="view-tour-package.php" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
 							</li>
 							<li>
 								
@@ -170,7 +170,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-package">
 					<div class="package-image">
-						<a href="#"><img src="images/packages/3.jpg" alt="">
+                                            <a href="view-tour-package.php"><img src="images/packages/3.jpg" alt="">
 						</a>
 					</div>
 					<div class="package-content">
@@ -180,7 +180,7 @@
 					</div>
 					<div class="package-calto-action">
 						<ul class="ct-action">
-							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                                    <li><a href="view-tour-package.php" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
 							</li>
 							<li>
 								
@@ -193,7 +193,7 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="single-package">
 					<div class="package-image">
-						<a href="#"><img src="images/packages/4.jpg" alt="">
+                                            <a href="view-tour-package.php"><img src="images/packages/4.jpg" alt="">
 						</a>
 					</div>
 					<div class="package-content">
@@ -203,7 +203,7 @@
 					</div>
 					<div class="package-calto-action">
 						<ul class="ct-action">
-							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                                    <li><a href="view-tour-package.php" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
 							</li>
 							<li>
 								

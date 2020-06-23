@@ -79,27 +79,14 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item destination">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/france.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/france.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>France</span>
-						<h3>Eiffel Tower</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						<h3>Sigiriya</h3>
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -108,27 +95,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/america.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/america.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>America</span>
+						
 						<h3>statue of liberty</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -137,27 +112,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/eng.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/eng.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>England</span>
+						
 						<h3>Tower Bridge</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -166,27 +129,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/thaland.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/thaland.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>Australia</span>
+						
 						<h3>Opera House</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -200,27 +151,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item destination">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/france.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/france.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>France</span>
+						
 						<h3>Eiffel Tower</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -229,27 +168,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/america.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/america.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>America</span>
+						
 						<h3>statue of liberty</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -258,27 +185,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/eng.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/eng.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>England</span>
+						
 						<h3>Tower Bridge</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
@@ -287,27 +202,15 @@
 			<div class="col-md-3 col-sm-6 col-xs-12 single-item">
 				<div class="single-destionation-5">
 					<div class="destination-5-image">
-						<a href="#"><img src="images/destination/thaland.jpg" alt=""></a>
+                                            <a href="view-destination.php"><img src="images/destination/thaland.jpg" alt=""></a>
 					</div>
 					<div class="destination-5-description">
-						<span>Australia</span>
+						
 						<h3>Opera House</h3>
-						<p>4Days, 5 Nights From <span>$500</span>
-						</p>
-						<ul class="rating-review-5">
-							<li>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</li>
-							<li>
-								<p>(27 Reviews)</p>
-							</li>
-						</ul>
+						
+						
 						<div class="discount-package-4-btn">
-						<a href="#" class="travel-primary-btn hvr-shutter-out-horizontal">Book Now</a>
+                                                    <a href="view-destination.php" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
 					</div>
 					</div>
 				</div>
