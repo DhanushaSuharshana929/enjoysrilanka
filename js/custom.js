@@ -46,8 +46,8 @@
 		loop:true,
 		margin:10,
 		nav:true,
-		autoplay:false,
-		autoplayTimeout:1000,
+		autoplay:true,
+		autoplayTimeout:2000,
 		animateOut:true,
 		animateIn:true,
 		responsive:{

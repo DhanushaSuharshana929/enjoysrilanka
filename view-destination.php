@@ -1,3 +1,7 @@
+<?php
+include './class/include.php';
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -19,7 +23,7 @@
         <link rel="stylesheet" href="css/animate.css">
         <!-- Button Hover animate css -->
         <link rel="stylesheet" href="css/hover-min.css">
-        <!-- jquery-ui.min css -->
+        <!-- jquery-ui.min css -->  
         <link rel="stylesheet" href="css/jquery-ui.min.css">
         <!-- meanmenu css -->
         <link rel="stylesheet" href="css/meanmenu.min.css">
