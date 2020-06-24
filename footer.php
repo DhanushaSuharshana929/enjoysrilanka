@@ -44,11 +44,11 @@
                             <h3>Our Menu</h3>
                         </div>
                         <ul class="recent-post">
-                            <li><a href="about-us.php.php" style="color: white">About Us</a></li>
-                            <li><a href="offers.php" style="color: white">Offers</a></li>
-                            <li><a href="testimonials.php" style="color: white">Testimonials</a></li>
-                            <li><a href="tour-packages.php" style="color: white">All Tour Packages</a></li>
-                            <li><a href="contact-us.php" style="color: white">Contact Us</a></li>
+                            <li><a href="about-us.php" style="color: white">About Us</a></li>
+                            <li><a href="view-tour-package.php" style="color: white">All Tour Packages</a></li>
+                            <li><a href="destinations.php" style="color: white">Destinations</a></li>
+                            <li><a href="gallery.php" style="color: white">Gallery</a></li>
+                            <li><a href="contact-us.php" style="color: white">Contact</a></li>
                         </ul>
                     </div>
                 </div>

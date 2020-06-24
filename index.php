@@ -1,7 +1,7 @@
 <?php
 include './class/include.php';
 
-$ABOUT_US = new Page(1);
+$ABOUT = new Page(1);
 ?>
 
 <!DOCTYPE html>
@@ -86,12 +86,10 @@ $ABOUT_US = new Page(1);
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
                                 <h2>Welcome to Enjoy Sri Lanka</h2>
-                                <h5>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut laoree.</h5>
+                                
                                 <div class="welcome-content">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismody tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adi minim veniam, qu nostrud exerci tation ullamcorperea commodo consequat utm euismod tincidunt ut laore dolore magna aliquam erat volutpat.</p>
-                                    <p>lorem ipsum dolor sit amet, consectetuer adipiscing elit yoused diam nonummy nibh euismody tincidunt ut laoreet dolore magna.</p>
-                                    <a href="#" class="read-more hvr-fade">Read More</a>
+                                    <p><?php echo $ABOUT->description ?></p>
+                                    <a href="about-us.php" class="read-more hvr-fade">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -124,9 +122,9 @@ $ABOUT_US = new Page(1);
                                 <div class="package-details">
                                     <div class="package-places">
                                         <h4><?php echo $tour_package['title']; ?></h4>
-                                        <span> <i class="fa fa-clock-o"></i> <?php echo $tour_package['title']; ?></span>
+                                        <span> <i class="fa fa-clock-o"></i> <?php echo $tour_package['dates']; ?></span>
                                         <div class="details">
-                                            <p><?php echo $tour_package['description']; ?></p>
+                                            <p><?php echo substr($tour_package['short_description'],0,83).'..'; ?></p>
                                         </div>
                                     </div>
                                     <div class="package-ratings-review">
@@ -140,15 +138,19 @@ $ABOUT_US = new Page(1);
                             </div>
                         <?php } ?>
 
-                        
 
-                       
 
-                        
+
+
+
                     </div> <!-- tour packages carosual end -->
                 </div>
             </div>
         </section> <!-- Tour Packages end here -->
+
+
+
+
 
         <section class="pb-70 pt-100">
             <div class="container">
@@ -161,75 +163,36 @@ $ABOUT_US = new Page(1);
                     </div>
                 </div>
                 <div class="destination-slider-active owl-carousel">
-                    <div class="single-destination">
-                        <figure>
-                            <a href="view-destination.php"><img src="images/destination/yala.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="view-destination.php"><i class="fa fa-map-marker"></i>Sydney, Australia</a>
-                            <h4>Opera House <span>3 Tours</span></h4>
-                        </div>
-                    </div> <!-- single popular destination  end-->
+                    <?php
+                    $ATTRACTION = new Attraction(NULL);
+                    foreach ($ATTRACTION->all() as $key => $attraction) {
+                        if ($key < 6) {
+                            ?>
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="view-destination.php"><img src="images/destination/nilaveli.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="view-destination.php"><i class="fa fa-map-marker"></i>London, Eangland</a>
-                            <h4>Tower Bridge<span>5 Tours</span></h4>
-                        </div>
-                    </div> <!-- single popular destination  end-->
+                            <div class="single-destination">
+                                <figure>
+                                    <a href="view-destination.php"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
+                                    </a>
+                                    <figcaption>
+                                        <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="des-city">
+                                    <a href="view-destination.php"><?php echo substr($attraction['title'],0,16).'..'; ?></a>
+                                    
+                                </div>
+                            </div> <!-- single popular destination  end-->
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="view-destination.php"><img src="images/destination/polonnaruwa.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="view-destination.php"><i class="fa fa-map-marker"></i>Paris, France</a>
-                            <h4>Eiffel Tower<span>4 Tours</span></h4>
-                        </div>
-                    </div> <!-- single popular destination  end-->
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="view-destination.php"><img src="images/destination/nilaveli.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="view-destination.php"><i class="fa fa-map-marker"></i>New york, USA</a>
-                            <h4>Statue Of Liberty<span>3 Tours</span></h4>
-                        </div>
-                    </div> <!-- single popular destination  end-->
+                            <?php
+                        }
+                    }
+                    ?>
 
-                    <div class="single-destination">
-                        <figure>
-                            <a href="view-destination.php"><img src="images/destination/yala.jpg" alt="">
-                            </a>
-                            <figcaption>
-                                <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                            </figcaption>
-                        </figure>
-                        <div class="des-city">
-                            <a href="view-destination.php"><i class="fa fa-map-marker"></i>Agra, India</a>
-                            <h4>Tajmahal<span>5 Tours</span></h4>
-                        </div>
-                    </div> <!-- single popular destination  end-->
+
+
+
+
                 </div>
             </div>
         </section> <!-- end popular destination-->
@@ -238,36 +201,26 @@ $ABOUT_US = new Page(1);
         <section class="testimonial-area-5">
             <div class="testimonial-5-active owl-carousel">
                 <!-- single testimonial start -->
+                
+                <?php
+                                $COMMENT = new Comments(NULL);
+                                foreach ($COMMENT->activeComments() as $comment) {
+                                    ?>
                 <div class="single-testimonial">
-                    <img src="images/client/1.jpg" alt="" class="img-responsive img-circle">
+                    <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" class="img-responsive img-circle">
                     <div class="testimonial-messages">
-                        <p>Lorem ipsum dolor sit amet consecteituer adipiscing eluit sed diapm nonum my nibhu euismod tincidunt ut laoreet dolor you magna aliquam eratv pat Ut wisi enim adefra miniumyp veniam quis.</p>
+                        <p><?php echo $comment['comment']; ?></p>
                     </div>
                     <div class="author-bio">
-                        <h3>Jhonthan Smith</h3>
-                        <span>London Trip Travelers</span>
+                        <h3><?php echo $comment['name']; ?></h3>
+                        <span><?php echo $comment['country']; ?></span>
                     </div>
                 </div>
-                <div class="single-testimonial">
-                    <img src="images/client/1.jpg" alt="" class="img-responsive img-circle">
-                    <div class="testimonial-messages">
-                        <p>Lorem ipsum dolor sit amet consecteituer adipiscing eluit sed diapm nonum my nibhu euismod tincidunt ut laoreet dolor you magna aliquam eratv pat Ut wisi enim adefra miniumyp veniam quis.</p>
-                    </div>
-                    <div class="author-bio">
-                        <h3>Jhonthan Smith</h3>
-                        <span>London Trip Travelers</span>
-                    </div>
-                </div>
-                <div class="single-testimonial">
-                    <img src="images/client/1.jpg" alt="" class="img-responsive img-circle">
-                    <div class="testimonial-messages">
-                        <p>Lorem ipsum dolor sit amet consecteituer adipiscing eluit sed diapm nonum my nibhu euismod tincidunt ut laoreet dolor you magna aliquam eratv pat Ut wisi enim adefra miniumyp veniam quis.</p>
-                    </div>
-                    <div class="author-bio">
-                        <h3>Jhonthan Smith</h3>
-                        <span>London Trip Travelers</span>
-                    </div>
-                </div><!-- single testimonial end -->
+                
+                <?php
+                                }
+                                ?>
+                <!-- single testimonial end -->
             </div>
         </section><!-- testimonial area end here -->
 

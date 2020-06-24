@@ -1,8 +1,12 @@
+<?php
+include './class/include.php';
+?>
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/single-package.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:12 GMT -->
-    <head>
+     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">

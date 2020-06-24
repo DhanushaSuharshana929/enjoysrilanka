@@ -45,13 +45,16 @@
                             </li>
                             <li><a href="about-us.php">About Us</a>
                             </li>
-                            <li><a href="hotel-version-one.html">Tours</a>
+                            <li><a href="#">Tours</a>
                                 <!-- dropdown start -->
                                 <ul class="dropdown">
-                                    <li><a href="day-tours.php">Day Tours</a>
-                                    </li>
-                                    <li><a href="#">Round Tours</a>
-                                    </li>
+                                     <?php
+                                $TOUR_TYPE = new TourType(NULL);
+                                foreach ($TOUR_TYPE->all() as $tour_type) {
+
+                                    ?>
+                                    <li><a href="tours.php?type=<?php echo $tour_type['id']; ?>"><?php echo $tour_type['name']; ?></a></li>
+                                     <?php } ?>
                                 </ul>
                             </li>
                             <li><a href="destinations.php">Destinations</a>

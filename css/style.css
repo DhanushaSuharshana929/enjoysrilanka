@@ -3370,7 +3370,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
      padding-bottom: 5px;
 }
  .top-destination-area-5 .single-destionation-5 .destination-5-description h3 {
-     font-size: 20px;
+     font-size: 15px;
      font-weight: 600;
      text-transform: capitalize;
      color: #454545;
@@ -3415,7 +3415,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
      background: #37b721 url("../images/bgimage/beach.jpg") no-repeat scroll center center/cover;
      position: relative;
      overflow: hidden;
-     padding: 100px 0;
+     padding: 34.14px 0;
 }
  .testimonial-area-5:before {
      position: absolute;

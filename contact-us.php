@@ -1,3 +1,8 @@
+<?php
+include './class/include.php';
+?>
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 

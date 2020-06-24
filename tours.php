@@ -1,11 +1,16 @@
 <?php
 include './class/include.php';
+$id = '';
+$id = $_GET['type'];
+$DAY_TOUR = new TourType(NULL);
+$TOUR_PACKAGE = new TourPackage(NULL);
+$TOURS = $TOUR_PACKAGE->allToursByType($id);
 ?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/blog-version-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:29 GMT -->
+    <!-- Mirrored from getnajmul.com/theme/trabble/package-version-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:11 GMT -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -39,14 +44,9 @@ include './class/include.php';
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- magnific Css -->
         <link rel="stylesheet" href="css/magnific-popup.css">
-        <!-- Revolution Slider -->
-        <link rel="stylesheet" href="css/assets/revolution/layers.css">
-        <link rel="stylesheet" href="css/assets/revolution/navigation.css">
-        <link rel="stylesheet" href="css/assets/revolution/settings.css">
         <!-- custome css -->
         <link rel="stylesheet" href="css/style.css">
         <!-- responsive css -->
-        <link href="css/simple-lightbox.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -62,15 +62,15 @@ include './class/include.php';
         <!-- header area end here -->
 
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/Blogs-Version-01.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/bercums/package-Version-01.jpg');">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-12">
                             <div class="bredcrums-content">
-                                <h2>Blog</h2>
+                                <h2>Package</h2>
                                 <ul>
                                     <li><a href="index-2.html">Home</a></li>
-                                    <li class="active"><a href="blog-version-one.html">Blog</a></li>
+                                    <li class="active"><a href="package-version-one.html">Package Style One</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,31 +80,40 @@ include './class/include.php';
         </section><!-- blog breadcrumb version one end here -->
 
         <!-- popular destination strat -->
-        <section class="blog-contents-version-one pt-100 pb-70">
+        <section class="blog-contents-version-one pt-100 pb-70 popular-packages">
             <div class="container">
                 <div class="row">
-                    <!-- single travel blog-->
+
                     <?php
-                    $ALBUM_PHOTO = new AlbumPhoto(NULL);
-                    foreach ($ALBUM_PHOTO->getAlbumPhotosById(1) as $key => $album_photo) {
-                        
+                    foreach ($TOURS as $day_tour) {
                         ?>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="single-travel-blog">
-                                <div class="gallery">
-                                    <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name']; ?>" alt=""></a>
-
-                                    <div class="clear"></div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single-package">
+                                <div class="package-image">
+                                    <a href="view-tour-package.php"><img src="upload/tour-package/<?php echo $day_tour['image_name']; ?>" alt="">
+                                    </a>
                                 </div>
+                                <div class="package-content">
+                                    <h3><?php echo $day_tour['title']; ?></h3>
+                                    <p><?php echo substr($day_tour['short_description'],0,100).'..'; ?></p>
+                                </div>
+                                <div class="package-calto-action">
+                                    <ul class="ct-action">
+                                        <li><a href="view-tour-package.php?id=<?php echo $day_tour['id'] ?>" class="travel-booking-btn hvr-shutter-out-horizontal">View Package</a>
+                                        </li>
+                                        <li>
 
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div><!-- single travel guide & security end-->
-                        <?php
-                    }
-                    ?> 
+                        </div><!--end single package -->
+                    <?php } ?>
+
 
                 </div>
+
 
             </div>
         </section><!-- single popular destination  end-->
@@ -117,7 +126,7 @@ include './class/include.php';
 
         <div class="to-top pos-rtive">
             <a href="#"><i class = "fa fa-angle-up"></i></a>
-        </div> <!-- Scroll to top jump button end-->
+        </div><!--End Scroll to top-->
 
         <!-- ============================
                 JavaScript Files
@@ -159,14 +168,7 @@ include './class/include.php';
         <script src="js/jquery-customselect.js"></script>
         <!-- main js -->
         <script src="js/custom.js"></script>
-        <script src="js/simple-lightbox.js" type="text/javascript"></script>
-
-        <script>
-            (function () {
-                var $gallery = new SimpleLightbox('.gallery a', {});
-            })();
-        </script>
     </body>
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/blog-version-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:32 GMT -->
+    <!-- Mirrored from getnajmul.com/theme/trabble/package-version-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:12 GMT -->
 </html>
