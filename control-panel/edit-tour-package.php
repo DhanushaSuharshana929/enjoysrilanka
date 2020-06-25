@@ -56,6 +56,31 @@ $TOUR_PACKAGE = new TourPackage($id);
                             </div>
                             <div class="body">
                                 <form class="form-horizontal" method="post"  id="form-data" enctype="multipart/form-data"> 
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+
+                                                <select class="form-control" name="tour_type" id="tour_type">
+                                                    <option value=""> --Please Select the tour type -- </option>
+
+                                                    <?php
+                                                    $TOUR_TYPE = new TourType(NULL);
+                                                    foreach ($TOUR_TYPE->all() as $key => $tour_type) {
+                                                        if ($TOUR_PACKAGE->tour_type == $tour_type['id']) {
+                                                            ?>
+                                                            <option value=" <?php echo $tour_type['id'] ?>" selected=""> <?php echo $tour_type['name'] ?>  </option> 
+                                                        <?php } else { ?>
+                                                            <option value=" <?php echo $tour_type['id'] ?>" > <?php echo $tour_type['name'] ?>  </option> 
+
+                                                        <?php }
+                                                    }
+                                                    ?>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">

@@ -1,12 +1,18 @@
 <?php
 include './class/include.php';
+$id = '';
+$id = $_GET['id'];
+
+$TOUR_PACKAGE = new TourPackage($id);
+$TOUR_DATE_PHOTO = new TourDatePhoto($id);
+$TOUR_PACKAGES = new TourPackage(NULL);
 ?>
 
 
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-     <head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
@@ -63,11 +69,11 @@ include './class/include.php';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="bredcrums-content">
-                                <h2>Package</h2>
+                                <h2><?php echo $TOUR_PACKAGE->title; ?></h2>
                                 <ul>
-                                    <li><a href="index-2.html">Home</a>
+                                    <li><a href="#">Home</a>
                                     </li>
-                                    <li class="active"><a href="single-package.html">Package Details</a>
+                                    <li class="active"><a href="#"><?php echo $TOUR_PACKAGE->title; ?></a>
                                     </li>
                                 </ul>
                             </div>
@@ -82,257 +88,100 @@ include './class/include.php';
                 <div class="row">
                     <!-- single package tab with details -->
                     <div class="col-md-8 col-sm-12" style="margin-bottom: 10px">
-                        <div class="single-package-details">
-                            <div class="single-package-title">
-                                <h3>Day 01 – Airport / Colombo City (Capital of Sri Lanka)</h3>
 
-                            </div>
+                        <?php
+                        $TOUR_DATE = new TourDate(NULL);
+                        foreach ($TOUR_DATE->getTourDatesById($TOUR_PACKAGE->id) as $tourdate) {
+                            ?>
 
-                            <div class="blog-content">
-                                <p><strong>Day 01– Kandy</strong>
-                                </p>
-                            </div>
+                            <div class="single-package-details">
+                                <div class="single-package-title">
+                                    <h3><?php echo $tourdate['title']; ?></h3>
 
-
-                        </div> 
-                        <div class="tab-content" style="margin-bottom:25px;">
-
-                            <div class="row">
-                                <!-- left content -->
-
-
-                                <div class="chosse-packge">
-
-                                    <div class="row" style="margin-bottom: 15px;">
-                                        <div class="col-md-12 col-sm-12">
-                                            <ul class="packaging-contents">
-                                                <li><i class="fa fa-angle-double-right"></i>Arrival and assistant at the airport proceed to Colombo</li>
-                                                <li><i class="fa fa-angle-double-right"></i>Check-in at the hotel and relax</li>
-                                                <li><i class="fa fa-angle-double-right"></i>Overnight stay at the hotel</li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
                                 </div>
-                                <div class="tour-description">
 
-                                    <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight Japan Tripit territory international carren tal Pacific outdoor Turkey. Country international to urist attractions mil es train Moscow guide. Japan horse riding money Bacel ona Buda pest yach t passport animals package China hitchh iking discover deal. Russia St. Petersburg Cuba creditcard bookin g discover Amst erdam flying. Freedom ani mals car rental booki ng. GEO Instagram group discount Brasil Germany gateway activ e lifestyle. Transit sailing kayak diary Europe chartering.</p>
+                                <div class="blog-content">
+                                    <p><strong>Day 01– Kandy</strong>
+                                    </p>
                                 </div>
 
 
+                            </div> 
+                            <div class="tab-content" style="margin-bottom:25px;">
 
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/1.jpg" class="big"><img src="images/blog/1.jpg" alt="" title="Beautiful Image" /></a>
+                                <div class="row">
+                                    <!-- left content -->
 
-                                            <div class="clear"></div>
-                                        </div>
 
+                                    <div class="chosse-packge">
+
+
+                                        <div class="tour-description">
+                                            <?php echo $tourdate['description']; ?>  </div>
                                     </div>
-                                </div><!-- single travel guide & security end-->
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/2.jpg" class="big"><img src="images/blog/2.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/2.jpg" class="big"><img src="images/blog/2.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/2.jpg" class="big"><img src="images/blog/2.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-                            </div>
+ 
+                                    <?php
+                                    $TOUR_DATE_PHOTO = new TourDatePhoto(NULL);
+                                    foreach ($TOUR_DATE_PHOTO->getTourDatePhotosById($tourdate['id']) as $tour_date_photo) {
+                                        ?>
 
 
-                        </div> 
-                        <div class="single-package-details">
-                            <div class="single-package-title">
-                                <h3>Day 02 – Airport / Colombo City (Capital of Sri Lanka)</h3>
+                                        <div class="col-md-3">
 
-                            </div>
+                                            <div class="single-travel-blog">
+                                                <div class="gallery">
+                                                    <a href="upload/tour-package/date/gallery/<?php echo $tour_date_photo ['image_name']; ?>" class="big"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date_photo ['image_name']; ?>" alt=""></a>
 
-                            <div class="blog-content">
-                                <p><strong>Day 01– Kandy</strong>
-                                </p>
-                            </div>
+                                                    <div class="clear"></div>
+                                                </div>
 
+                                            </div>
 
-                        </div> 
-                        <div class="tab-content">
+                                        </div> 
 
-                            <div class="row">
-                                <!-- left content -->
+                                        <?php
+                                    }
+                                    ?>
 
-
-                                <div class="chosse-packge">
-
-                                    <div class="row" style="margin-bottom: 15px;">
-                                        <div class="col-md-12 col-sm-12">
-                                            <ul class="packaging-contents">
-                                                <li><i class="fa fa-angle-double-right"></i>Arrival and assistant at the airport proceed to Colombo</li>
-                                                <li><i class="fa fa-angle-double-right"></i>Check-in at the hotel and relax</li>
-                                                <li><i class="fa fa-angle-double-right"></i>Overnight stay at the hotel</li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="tour-description">
-
-                                    <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight Japan Tripit territory international carren tal Pacific outdoor Turkey. Country international to urist attractions mil es train Moscow guide. Japan horse riding money Bacel ona Buda pest yach t passport animals package China hitchh iking discover deal. Russia St. Petersburg Cuba creditcard bookin g discover Amst erdam flying. Freedom ani mals car rental booki ng. GEO Instagram group discount Brasil Germany gateway activ e lifestyle. Transit sailing kayak diary Europe chartering.</p>
                                 </div>
 
 
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/1.jpg" class="big"><img src="images/blog/1.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/2.jpg" class="big"><img src="images/blog/2.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/2.jpg" class="big"><img src="images/blog/2.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-
-                                <div class="col-md-3">
-                                    <div class="single-travel-blog">
-                                        <div class="gallery">
-                                            <a href="images/blog/2.jpg" class="big"><img src="images/blog/2.jpg" alt="" title="Beautiful Image" /></a>
-
-                                            <div class="clear"></div>
-                                        </div>
-
-                                    </div>
-                                </div><!-- single travel guide & security end-->
-                            </div>
-
-
-                        </div> 
+                            </div> 
+                            <?php
+                        }
+                        ?>
 
                     </div> 
 
 
 
-                    <!-- booking form start here -->
-                    <div class="col-md-4 col-sm-12" >
-                        <div class="row " style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
+                    <?php
+                    foreach ($TOUR_PACKAGES->allToursByType($TOUR_PACKAGE->tour_type) as $tours) {
+                        ?>
+
+                        <div class="col-md-4 col-sm-12" >
+                            <div class="row " style="margin-bottom: 15px;">
+                                <div class="col-md-4">
+                                    <img src="upload/tour-package/<?php echo $tours['image_name']; ?>" alt=""  >
+                                </div>
+
+                                <div class="col-md-8">
+                                    <a href="#"><h4>
+                                            <?php echo $tours['title']; ?>
+                                        </h4></a>
+                                    
+                               <?php echo substr($tours['description'],0,60).'..'; ?>
+                                </div>
+
                             </div>
 
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <a href="#"><img src="images/destination/ella.jpg" alt=""  ></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <a href="#"><h4>
-                                    1Day Tours
-                                    </h4></a>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
 
 
 
-                    </div><!-- booking form end here -->
-
+                        </div><!-- booking form end here -->
+                        <?php
+                    }
+                    ?>
 
                 </div>
 

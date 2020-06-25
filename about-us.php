@@ -1,3 +1,9 @@
+<?php
+include './class/include.php';
+$ABOUT = new Page(1);
+?>
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -76,12 +82,11 @@
                     <div class="col-md-6">
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
-                                <h2>Welcome to trabble</h2>
+                                <h2>Welcome to Enjoy Sri Lanka</h2>
                                 <h5>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut laoree.</h5>
                                 <div class="welcome-content">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismody tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adi minim veniam, qu nostrud exerci tation ullamcorperea commodo consequat utm euismod tincidunt ut laore dolore magna aliquam erat volutpat.</p>
-                                    <p>lorem ipsum dolor sit amet, consectetuer adipiscing elit yoused diam nonummy nibh euismody tincidunt ut laoreet dolore magna.</p>
+                                    <p><?php echo $ABOUT->description ?></p>
+                                    
                                     <a href="#" class="read-more hvr-fade">Read More</a>
                                 </div>
                             </div>

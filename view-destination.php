@@ -1,5 +1,9 @@
 <?php
 include './class/include.php';
+$id = '';
+$id = $_GET['id'];
+
+$ATTRACTION = new Attraction($id);
 ?>
 
 <!DOCTYPE html>
@@ -82,8 +86,8 @@ include './class/include.php';
                     <!-- single package tab with details -->
                     <div class="col-md-8 col-sm-12">
                         <div class="single-package-details">
-                            
-                           
+
+
                             <div class="package-features-image">
 
 
@@ -135,15 +139,16 @@ include './class/include.php';
                                 <div role="tabpanel" class="tab-pane fade in active" id="description">
                                     <div class="row">
                                         <!-- left content -->
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-                                                <h4>Sigiriya</h4>
-                                                <p>Tourist attractions people foreign sleep overnight housing. Gerimrany group discount tour operator. Airplane couchsurfing Moi scow ma ps uncharted luxury train guest tour operator German y busre laxation. Paris overnight Japan Tripit territory international carren tal Pacific outdoor Turkey. Country international to urist attractions mil es train Moscow guide. Japan horse riding money Bacel ona Buda pest yach t passport animals package China hitchh iking discover deal. Russia St. Petersburg Cuba creditcard bookin g discover Amst erdam flying. Freedom ani mals car rental booki ng. GEO Instagram group discount Brasil Germany gateway activ e lifestyle. Transit sailing kayak diary Europe chartering.</p>
-                                            </div>
+                                        
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="tour-description">
+                                                    <h4><?php echo $ATTRACTION->title?></h4>
+                                                    <p><?php echo $ATTRACTION->description?></p>
+                                                </div>
+
+                                            </div><!-- left-content -->
+
                                            
-                                        </div><!-- left-content -->
-
-
                                     </div>
                                 </div>
 
@@ -160,84 +165,36 @@ include './class/include.php';
                         </div><!-- tab content end -->
                     </div><!-- single package tab with details -->
 
+<?php
+                    foreach ($ATTRACTION->all() as $attraction) {
+                        ?>
                     
                     <div class="col-md-4 col-sm-12">
                         <div class="row " style="margin-bottom: 15px;">
                             <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
+                                <img src="./upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""  >
                             </div>
 
                             <div class="col-md-8">
                                 <h4>
-                                    1Day Tours
+                                    <?php echo $attraction ['title'];?>
                                 </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
+                                <?php echo substr($attraction['description'],0,55).'..'; ?>
                             </div>
 
                         </div>
                         
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
-                        
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="images/destination/ella.jpg" alt=""  >
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4>
-                                    1Day Tours
-                                </h4>
-                                Sri Lanka is an Island blessed with  beautiful beaches a...
-                            </div>
-
-                        </div>
 
 
 
                     </div><!-- booking form end here -->
-                
-                    
+
+<?php
+                    }
+                    ?>
                 </div>
-                
-                
+
+
             </div>
         </section>
 
