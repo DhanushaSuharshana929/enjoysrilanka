@@ -91,7 +91,7 @@ $TOURS = $TOUR_PACKAGE->allToursByType($id);
                         <div class="col-md-4 col-sm-6">
                             <div class="single-package">
                                 <div class="package-image">
-                                    <a href="view-tour-package.php"><img src="upload/tour-package/<?php echo $day_tour['image_name']; ?>" alt="">
+                                    <a href="view-tour-package.php?id=<?php echo $day_tour['id']?>"><img src="upload/tour-package/<?php echo $day_tour['image_name']; ?>" alt="">
                                     </a>
                                 </div>
                                 <div class="package-content">

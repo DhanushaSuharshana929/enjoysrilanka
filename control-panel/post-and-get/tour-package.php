@@ -123,6 +123,7 @@ if (isset($_POST['update'])) {
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
     $TOUR_PACKAGE->map = $_POST['map'];
+    $TOUR_PACKAGE->tour_type = $_POST['tour_type'];
     $TOUR_PACKAGE->update();
 
     $result = ["id" => $_POST['id']];

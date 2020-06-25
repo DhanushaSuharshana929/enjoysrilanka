@@ -27,15 +27,7 @@ jQuery(document).ready(function () {
         validateEmpty("txtPhone", "spanPhone");
 
     });
-    
-//    jQuery("#txtCountry").blur(function () {
-//
-//        validateEmpty("txtCountry", "spanCountry");
-//
-//    });
-
-
-
+  
 //    jQuery("#txtSubject").blur(function () {
 //
 //        validateEmpty("txtSubject", "spanSubject");
