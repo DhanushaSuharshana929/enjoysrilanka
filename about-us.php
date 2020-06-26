@@ -7,14 +7,14 @@ $ABOUT = new Page(1);
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/package-version-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:11 GMT -->
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
         <meta name="keywords" content="Tour, Travel, Travel Agency Template">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trabble - Tour, Travel & Travel Agency Template</title>
+        <title>Enjoy Sri Lanka - Tour & Travel  Agency Company</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
@@ -49,25 +49,22 @@ $ABOUT = new Page(1);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>	   
+        	   
         <?php
         include ("./header.php");
         ?>
         <!-- header area end here -->
 
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/about/package-Version-01.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/banner/banner.png');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-12">
                             <div class="bredcrums-content">
-                                <h2>Package</h2>
+                                <h2>About Us</h2>
                                 <ul>
-                                    <li><a href="index-2.html">Home</a></li>
-                                    <li class="active"><a href="package-version-one.html">Package Style One</a></li>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li class="active"><a href="#">About Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +84,7 @@ $ABOUT = new Page(1);
                                 <div class="welcome-content">
                                     <p><?php echo $ABOUT->description ?></p>
                                     
-                                    <a href="#" class="read-more hvr-fade">Read More</a>
+                                    <a href="contact-us.php" class="read-more hvr-fade">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -162,5 +159,5 @@ $ABOUT = new Page(1);
         <script src="js/custom.js"></script>
     </body>
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/package-version-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:12 GMT -->
+    
 </html>

@@ -1566,7 +1566,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
      background: #2c3035;
 }
  .index-2 .header-bottom-area {
-     background: #000;
+     background: #000000a8;
 }
  .index-2 .header-bottom-area li a {
      color: #ffffff;
@@ -4366,7 +4366,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
 	top: 100% !important;
 }
 .header-bottom-area .logo-area {
-    padding: 24px 0;
+    padding: 10px 0;
 }
 .single-bredcurms .bredcrums-content ul li a {
     font-size: 15px;

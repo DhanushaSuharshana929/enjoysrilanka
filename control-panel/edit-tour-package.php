@@ -102,7 +102,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                     <div class="col-md-12  ">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="price" class="form-control"  value="<?php echo $TOUR_PACKAGE->dates; ?>"  name="dates"   >
+                                                <input type="text" id="dates" class="form-control"  value="<?php echo $TOUR_PACKAGE->dates; ?>"  name="dates"   >
                                                 <label class="form-label">Dates</label>
                                             </div>
                                         </div>

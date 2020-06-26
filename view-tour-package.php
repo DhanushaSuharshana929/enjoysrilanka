@@ -54,10 +54,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>	  
+        
         <?php
         include ("./header.php");
         ?>
@@ -71,7 +68,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
                             <div class="bredcrums-content">
                                 <h2><?php echo $TOUR_PACKAGE->title; ?></h2>
                                 <ul>
-                                    <li><a href="#">Home</a>
+                                    <li><a href="index.php">Home</a>
                                     </li>
                                     <li class="active"><a href="#"><?php echo $TOUR_PACKAGE->title; ?></a>
                                     </li>

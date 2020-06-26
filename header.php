@@ -6,15 +6,14 @@
                 <div class="header-top-left">
                     <div class="col-sm-8">
                         <ul class="header-top-contact">
-                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>No. 03, Sri Dewamiththa Road,Galle</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> +94 11 366 3500 </li>
-                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>mail@synotec.lk</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> +94 777 719 380 / +94 912 250 510 </li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>office@enjoy-srilanka.com</li>
                         </ul>
                     </div>
 
                     <div class="header-top-right">
                         <div class="col-sm-4">
-                            <ul class="header-top-contact">
+                            <ul class="header-top-contact" style="float: right;">
                                 <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                                 <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                                 <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -31,14 +30,14 @@
     <div class="header-bottom-area" id="stick-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-12 tap-v-responsive">
+                <div class="col-md-3 col-sm-3 col-xs-12 tap-v-responsive">
                     <div class="logo-area">
-                        <a href="index.php"><img src="images/enjoysrilankalogo.png" alt="">
+                        <a href="index.php"><img src="images/enjoysrilankalogo3.png" alt="">
                         </a>
                     </div>
                 </div>
                 <!-- main menu start here -->
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <nav>
                         <ul class="main-menu text-right">
                             <li class="active"><a href="index.php">Home</a>
