@@ -7,18 +7,18 @@ $ABOUT = new Page(1);
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:32:10 GMT -->
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
         <meta name="keywords" content="Tour, Travel, Travel Agency Template">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trabble - Tour, Travel & Travel Agency Template</title>
+        <title>Enjoy Sri Lanka - Tour & Travel  Agency Company</title>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon_enjoysrilanka.png">
         <!-- bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -53,10 +53,7 @@ $ABOUT = new Page(1);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body> 
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>	
+        
         <?php
         include ("./header.php");
         ?>
@@ -116,7 +113,7 @@ $ABOUT = new Page(1);
                             <div class="single-package-carasoul">
                                 <div class="package-location">
                                     <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt="">
-                                    <span><?php echo $tour_package['price']; ?></span>
+                                    
                                 </div>
 
                                 <div class="package-details">

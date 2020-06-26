@@ -48,10 +48,7 @@ include './class/include.php';
 
     </head>
     <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>	
+        	
         <?php
         include ("./header.php");
         ?>
@@ -59,7 +56,7 @@ include './class/include.php';
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/contact-page.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/banner/banner.png');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -67,7 +64,7 @@ include './class/include.php';
                                 <h2>Contact</h2>
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
-                                    <li class="active"><a href="contact.html">Contact</a></li>
+                                    <li class="active"><a href="#">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -119,15 +116,30 @@ include './class/include.php';
                                     <div class="form-group">
                                         <input type="email" placeholder="Email" required="required" name="email" id="email">
                                         <div class="col-md-12">
-                                            <span id="spanFullName"></span>
+                                            <span id="spanEmail"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" placeholder="Subject" required="required" name="subject" id="subject">
+                                        <div class="col-md-12">
+                                            <span id="spanSubject"></span>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <textarea name="message" rows="6" placeholder="Message" id="comments"></textarea>
+                                        <div class="col-md-12">
+                                            <span id="spanComment"></span>
+                                        </div>
                                     </div>
+                                    <div class="col-md-7">
+                                    <div class="form-group">
+                                        <input type="text" name="SecurityCode" id="captchacode" class="form-control" placeholder="Security Code"  required>
+                                        <span id="capspan"></span>
+                                    </div>
+                                </div>
+                                    <div class="form-group col-md-3"style="margin-top: 28px">
+                                    <?php include './contact-form/captchacode-widget.php'; ?>
+                                </div>
                                     <div class="form-group">
                                         <button type="submit" class="button primary"><i class="fa fa-send"></i>Submit</button>
                                     </div>

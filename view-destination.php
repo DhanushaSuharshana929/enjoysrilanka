@@ -51,10 +51,8 @@ $ATTRACTION = new Attraction($id);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>	  
+        
+        	  
         <?php
         include ("./header.php");
         ?><!-- header area end here -->
@@ -66,11 +64,11 @@ $ATTRACTION = new Attraction($id);
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="bredcrums-content">
-                                <h2>Package</h2>
+                                <h2><?php echo $ATTRACTION->title; ?></h2>
                                 <ul>
-                                    <li><a href="index-2.html">Home</a>
+                                    <li><a href="index.php">Home</a>
                                     </li>
-                                    <li class="active"><a href="single-package.html">Package Details</a>
+                                    <li class="active"><a href="#"><?php echo $ATTRACTION->title; ?></a>
                                     </li>
                                 </ul>
                             </div>
@@ -85,6 +83,7 @@ $ATTRACTION = new Attraction($id);
                 <div class="row">
                     <!-- single package tab with details -->
                     <div class="col-md-8 col-sm-12">
+
                         <div class="single-package-details">
 
 
@@ -93,6 +92,7 @@ $ATTRACTION = new Attraction($id);
 
 
                                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
                                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -100,21 +100,35 @@ $ATTRACTION = new Attraction($id);
                                         <li data-target="#myCarousel" data-slide-to="2"></li>
                                     </ol>
 
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="images/packages/13.jpg" alt="" class="img-responsove border-raduis-3">
-                                        </div>
 
-                                        <div class="item">
-                                            <img src="images/packages/13.jpg" alt="" class="img-responsove border-raduis-3">
-                                        </div>
 
-                                        <div class="item">
-                                            <img src="images/packages/13.jpg" alt="" class="img-responsove border-raduis-3">
-                                        </div>
-                                    </div>
+                                    <?php
+                                    $ATTRACTION_PHOTO = new AttractionPhoto(null);
+                                    foreach ($ATTRACTION_PHOTO->all()as $key => $attraction_photo) {
+                                        if ($key == 0) {
+                                            ?>
 
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="./upload/attraction/gallery/<?php echo $attraction_photo['image_name']; ?>" alt="" class="img-responsove border-raduis-3">
+                                                </div>
+<?php
+                                        } else {
+                                            
+                                            ?>
+<div class="item">
+                                            <img src="./upload/attraction/gallery/<?php echo $attraction_photo['image_name']; ?>" alt="" class="img-responsove border-raduis-3">
+                                        </div>
+                                            <?php
+                                        }
+                                    }
+                                    ?> 
+
+                                            </div>
+
+
+                                            
                                     <!-- Left and right controls -->
                                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -128,6 +142,7 @@ $ATTRACTION = new Attraction($id);
 
 
                             </div>
+
                         </div><!-- tab menu strat -->
 
 
@@ -139,16 +154,16 @@ $ATTRACTION = new Attraction($id);
                                 <div role="tabpanel" class="tab-pane fade in active" id="description">
                                     <div class="row">
                                         <!-- left content -->
-                                        
-                                            <div class="col-md-12 col-sm-12">
-                                                <div class="tour-description">
-                                                    <h4><?php echo $ATTRACTION->title?></h4>
-                                                    <p><?php echo $ATTRACTION->description?></p>
-                                                </div>
 
-                                            </div><!-- left-content -->
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="tour-description">
+                                                <h4><?php echo $ATTRACTION->title ?></h4>
+                                                <p><?php echo $ATTRACTION->description ?></p>
+                                            </div>
 
-                                           
+                                        </div><!-- left-content -->
+
+
                                     </div>
                                 </div>
 
@@ -163,33 +178,34 @@ $ATTRACTION = new Attraction($id);
 
                             </div><!-- tabs content-->
                         </div><!-- tab content end -->
+
                     </div><!-- single package tab with details -->
 
-<?php
+                    <?php
                     foreach ($ATTRACTION->all() as $attraction) {
                         ?>
-                    
-                    <div class="col-md-4 col-sm-12">
-                        <div class="row " style="margin-bottom: 15px;">
-                            <div class="col-md-4">
-                                <img src="./upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""  >
+
+                        <div class="col-md-4 col-sm-12">
+                            <div class="row " style="margin-bottom: 15px;">
+                                <div class="col-md-4">
+                                    <img src="./upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""  >
+                                </div>
+
+                                <div class="col-md-8">
+                                    <h4>
+                                        <?php echo $attraction ['title']; ?>
+                                    </h4>
+                                    <?php echo substr($attraction['description'], 0, 55) . '..'; ?>
+                                </div>
+
                             </div>
 
-                            <div class="col-md-8">
-                                <h4>
-                                    <?php echo $attraction ['title'];?>
-                                </h4>
-                                <?php echo substr($attraction['description'],0,55).'..'; ?>
-                            </div>
-
-                        </div>
-                        
 
 
 
-                    </div><!-- booking form end here -->
+                        </div><!-- booking form end here -->
 
-<?php
+                        <?php
                     }
                     ?>
                 </div>

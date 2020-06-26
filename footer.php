@@ -11,9 +11,9 @@
                         <div class="footer-left">
 
                             <ul class="footer-contact">
-                                <li><img class="map" src="images/icon/map.png" alt="">Seventh Avenue New York</li>
-                                <li><img class="map" src="images/icon/phone.png" alt="">+123-456-7890</li>
-                                <li><img class="map" src="images/icon/gmail.png" alt="">info@yourcompany.com</li>
+                                <li><img class="map" src="images/icon/map.png" alt="">Talpe North Unawatuna</li>
+                                <li><img class="map" src="images/icon/phone.png" alt="">+94 777 719 380</li>
+                                <li><img class="map" src="images/icon/gmail.png" alt="">office@enjoy-srilanka.com</li>
                             </ul>
                         </div>
                     </div>
