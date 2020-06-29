@@ -7,7 +7,7 @@ $ABOUT = new Page(1);
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
-    
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -53,7 +53,7 @@ $ABOUT = new Page(1);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body> 
-        
+
         <?php
         include ("./header.php");
         ?>
@@ -83,7 +83,7 @@ $ABOUT = new Page(1);
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
                                 <h2>Welcome to Enjoy Sri Lanka</h2>
-                                
+
                                 <div class="welcome-content">
                                     <p><?php echo $ABOUT->description ?></p>
                                     <a href="about-us.php" class="read-more hvr-fade">Read More</a>
@@ -113,7 +113,7 @@ $ABOUT = new Page(1);
                             <div class="single-package-carasoul">
                                 <div class="package-location">
                                     <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt="">
-                                    
+
                                 </div>
 
                                 <div class="package-details">
@@ -121,7 +121,7 @@ $ABOUT = new Page(1);
                                         <h4><?php echo $tour_package['title']; ?></h4>
                                         <span> <i class="fa fa-clock-o"></i> <?php echo $tour_package['dates']; ?></span>
                                         <div class="details">
-                                            <p><?php echo substr($tour_package['short_description'],0,83).'..'; ?></p>
+                                            <p><?php echo substr($tour_package['short_description'], 0, 83) . '..'; ?></p>
                                         </div>
                                     </div>
                                     <div class="package-ratings-review">
@@ -175,8 +175,8 @@ $ABOUT = new Page(1);
                                     </figcaption>
                                 </figure>
                                 <div class="des-city">
-                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'],0,16).'..'; ?></a>
-                                    
+                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'], 0, 16) . '..'; ?></a>
+
                                 </div>
                             </div> <!-- single popular destination  end-->
 
@@ -198,25 +198,25 @@ $ABOUT = new Page(1);
         <section class="testimonial-area-5">
             <div class="testimonial-5-active owl-carousel">
                 <!-- single testimonial start -->
-                
+
                 <?php
-                                $COMMENT = new Comments(NULL);
-                                foreach ($COMMENT->activeComments() as $comment) {
-                                    ?>
-                <div class="single-testimonial">
-                    <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" class="img-responsive img-circle">
-                    <div class="testimonial-messages">
-                        <p><?php echo $comment['comment']; ?></p>
+                $COMMENT = new Comments(NULL);
+                foreach ($COMMENT->activeComments() as $comment) {
+                    ?>
+                    <div class="single-testimonial">
+                        <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" class="img-responsive img-circle">
+                        <div class="testimonial-messages">
+                            <p><?php echo $comment['comment']; ?></p>
+                        </div>
+                        <div class="author-bio">
+                            <h3><?php echo $comment['name']; ?></h3>
+                            <span><?php echo $comment['country']; ?></span>
+                        </div>
                     </div>
-                    <div class="author-bio">
-                        <h3><?php echo $comment['name']; ?></h3>
-                        <span><?php echo $comment['country']; ?></span>
-                    </div>
-                </div>
-                
-                <?php
-                                }
-                                ?>
+
+                    <?php
+                }
+                ?>
                 <!-- single testimonial end -->
             </div>
         </section><!-- testimonial area end here -->

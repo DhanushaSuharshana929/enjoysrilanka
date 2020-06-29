@@ -2,7 +2,7 @@
 include './class/include.php';
 $id = '';
 $id = $_GET['type'];
-$DAY_TOUR = new TourType(NULL);
+$DAY_TOUR = new TourType($id);
 $TOUR_PACKAGE = new TourPackage(NULL);
 $TOURS = $TOUR_PACKAGE->allToursByType($id);
 ?>
@@ -67,7 +67,8 @@ $TOURS = $TOUR_PACKAGE->allToursByType($id);
                                 <h2>Tour Packages</h2>
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
-                                    <li class="active"><a href="#">Tours</a></li>
+                                    <li  ><a href="#">Tour Packages</a></li>
+                                    <li class="active"><a href="#"><?php echo $DAY_TOUR->name ?></a></li>
                                 </ul>
                             </div>
                         </div>

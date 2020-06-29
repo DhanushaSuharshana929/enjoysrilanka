@@ -84,7 +84,7 @@ $ABOUT = new Page(2);
                                 <div class="welcome-content">
                                     <p><?php echo $ABOUT->description ?></p>
                                     
-                                    <a href="contact-us.php" class="read-more hvr-fade">Read More</a>
+                                    
                                 </div>
                             </div>
                         </div>
