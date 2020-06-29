@@ -1,6 +1,6 @@
 <?php
 include './class/include.php';
-$ABOUT = new Page(1);
+$ABOUT = new Page(2);
 ?>
 
 

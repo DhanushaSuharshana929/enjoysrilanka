@@ -130,7 +130,7 @@ $ABOUT = new Page(1);
                                 </div>
 
                                 <div class="package-long-btn hvr-shutter-out-horizontal">
-                                    <a href="view-tour-package.php">Read More</a>
+                                    <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>">Read More</a>
                                 </div>
                             </div>
                         <?php } ?>
@@ -168,14 +168,14 @@ $ABOUT = new Page(1);
 
                             <div class="single-destination">
                                 <figure>
-                                    <a href="view-destination.php"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
+                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
                                     </a>
                                     <figcaption>
-                                        <a href="view-destination.php" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
                                     </figcaption>
                                 </figure>
                                 <div class="des-city">
-                                    <a href="view-destination.php"><?php echo substr($attraction['title'],0,16).'..'; ?></a>
+                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'],0,16).'..'; ?></a>
                                     
                                 </div>
                             </div> <!-- single popular destination  end-->
