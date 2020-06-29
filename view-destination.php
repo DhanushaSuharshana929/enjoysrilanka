@@ -47,6 +47,7 @@ $ATTRACTION = new Attraction($id);
         <link rel="stylesheet" href="css/style.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -59,7 +60,7 @@ $ATTRACTION = new Attraction($id);
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/Single-Package-Details.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/banner/banner.png');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -104,7 +105,7 @@ $ATTRACTION = new Attraction($id);
 
                                     <?php
                                     $ATTRACTION_PHOTO = new AttractionPhoto(null);
-                                    foreach ($ATTRACTION_PHOTO->all()as $key => $attraction_photo) {
+                                    foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($ATTRACTION->id) as $key => $attraction_photo) {
                                         if ($key == 0) {
                                             ?>
 
@@ -271,5 +272,5 @@ $ATTRACTION = new Attraction($id);
         <script src="js/custom.js"></script>
     </body>
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/single-package.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:34:15 GMT -->
+    
 </html>

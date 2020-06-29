@@ -48,7 +48,7 @@ include './class/include.php';
 
     </head>
     <body>
-        	
+
         <?php
         include ("./header.php");
         ?>
@@ -85,7 +85,7 @@ include './class/include.php';
                         <div class="address">
                             <p>
                                 <strong>Address</strong>
-                                <br> No. 03,  <br /> Sri Dewamiththa Road, <br />  Galle
+                                <br> Talpe North, <br /> Unawatuna <br />  Galle
                             </p>
                             <p>
                                 <strong>Website</strong>
@@ -93,7 +93,7 @@ include './class/include.php';
                             </p>
                             <p>
                                 <strong>Email</strong>
-                                <br> mail@synotec.lk
+                                <br> office@enjoy-srilanka.com
                             </p>
                         </div>
                     </div>
@@ -114,35 +114,49 @@ include './class/include.php';
 
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" placeholder="Email" required="required" name="email" id="email">
+                                        <input type="email" placeholder="Email" required="required" name="email" id="txtEmail">
                                         <div class="col-md-12">
                                             <span id="spanEmail"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" placeholder="Subject" required="required" name="subject" id="subject">
+                                        <input type="text" placeholder="Phone Number" required="required" name="subject" id="txtPhone">
                                         <div class="col-md-12">
-                                            <span id="spanSubject"></span>
+                                            <span id="spanPhone"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="message" rows="6" placeholder="Message" id="comments"></textarea>
+                                        <textarea name="message" rows="6" placeholder="Message" id="txtMessage"></textarea>
                                         <div class="col-md-12">
-                                            <span id="spanComment"></span>
+                                            <span id="spanMessage"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-7">
-                                    <div class="form-group">
-                                        <input type="text" name="SecurityCode" id="captchacode" class="form-control" placeholder="Security Code"  required>
-                                        <span id="capspan"></span>
-                                    </div>
-                                </div>
-                                    <div class="form-group col-md-3"style="margin-top: 28px">
-                                    <?php include './contact-form/captchacode-widget.php'; ?>
-                                </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="button primary"><i class="fa fa-send"></i>Submit</button>
-                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-5" >
+                                            <div class="form-group">
+                                                <input type="text" name="SecurityCode" id="captchacode" class="form-control" placeholder="Security Code"  required>
+                                                <span id="capspan"></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group ">
+                                                <?php include './contact-form/captchacode-widget.php'; ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 p-t-10" style="margin-left: 20px">
+                                            <div class="form-group">
+                                                <button type="submit" class="button primary" id="btnSubmit"><i class="fa fa-send"></i>Submit</button>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
                                 </form><!--/ End Contact Form -->
                             </div>
                         </div>

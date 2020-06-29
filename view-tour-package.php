@@ -61,7 +61,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/bercums/Single-Package-Details.jpg');">
+            <div class="single-bredcurms" style="background-image:url('images/banner/banner.png');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -98,7 +98,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
                                 </div>
 
                                 <div class="blog-content">
-                                    <p><strong>Day 01– Kandy</strong>
+                                    <p><strong></strong>
                                     </p>
                                 </div>
 
