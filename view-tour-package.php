@@ -163,7 +163,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
                                 </div>
 
                                 <div class="col-md-8">
-                                    <a href="#"><h4>
+                                    <a href="view-tour-package.php?id=<?php echo $tours['id'] ?>"><h4>
                                             <?php echo $tours['title']; ?>
                                         </h4></a>
                                     

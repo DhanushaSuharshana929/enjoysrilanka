@@ -52,8 +52,8 @@ $ATTRACTION = new Attraction($id);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        
-        	  
+
+
         <?php
         include ("./header.php");
         ?><!-- header area end here -->
@@ -68,6 +68,8 @@ $ATTRACTION = new Attraction($id);
                                 <h2><?php echo $ATTRACTION->title; ?></h2>
                                 <ul>
                                     <li><a href="index.php">Home</a>
+                                    </li>
+                                    <li><a href="#">Destinations</a>
                                     </li>
                                     <li class="active"><a href="#"><?php echo $ATTRACTION->title; ?></a>
                                     </li>
@@ -114,22 +116,21 @@ $ATTRACTION = new Attraction($id);
                                                 <div class="item active">
                                                     <img src="./upload/attraction/gallery/<?php echo $attraction_photo['image_name']; ?>" alt="" class="img-responsove border-raduis-3">
                                                 </div>
-<?php
-                                        } else {
-                                            
-                                            ?>
-<div class="item">
-                                            <img src="./upload/attraction/gallery/<?php echo $attraction_photo['image_name']; ?>" alt="" class="img-responsove border-raduis-3">
-                                        </div>
-                                            <?php
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <div class="item">
+                                                    <img src="./upload/attraction/gallery/<?php echo $attraction_photo['image_name']; ?>" alt="" class="img-responsove border-raduis-3">
+                                                </div>
+                                                <?php
+                                            }
                                         }
-                                    }
-                                    ?> 
+                                        ?> 
 
-                                            </div>
+                                    </div>
 
 
-                                            
+
                                     <!-- Left and right controls -->
                                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -193,9 +194,9 @@ $ATTRACTION = new Attraction($id);
                                 </div>
 
                                 <div class="col-md-8">
-                                    <h4>
-                                        <?php echo $attraction ['title']; ?>
-                                    </h4>
+                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><h4>
+                                            <?php echo $attraction ['title']; ?>
+                                        </h4></a>
                                     <?php echo substr($attraction['description'], 0, 55) . '..'; ?>
                                 </div>
 
@@ -272,5 +273,5 @@ $ATTRACTION = new Attraction($id);
         <script src="js/custom.js"></script>
     </body>
 
-    
+
 </html>
