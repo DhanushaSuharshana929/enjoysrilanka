@@ -107,20 +107,20 @@ include './class/include.php';
                                 <!-- Contact Form -->
                                 <form class="form" method="post" action="http://getnajmul.com/theme/trabble/contact.php" name="contactform" id="contactform">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Name" required="required" name="txtFullName" id="txtFullName">
+                                        <input type="text" placeholder="Name"  name="txtFullName" id="txtFullName">
                                         <div class="col-md-12">
                                             <span id="spanFullName"></span>
                                         </div>
 
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" placeholder="Email" required="required" name="email" id="txtEmail">
+                                        <input type="email" placeholder="Email"  name="email" id="txtEmail">
                                         <div class="col-md-12">
                                             <span id="spanEmail"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" placeholder="Phone Number" required="required" name="subject" id="txtPhone">
+                                        <input type="text" placeholder="Phone Number"  name="subject" id="txtPhone">
                                         <div class="col-md-12">
                                             <span id="spanPhone"></span>
                                         </div>
@@ -135,7 +135,7 @@ include './class/include.php';
                                     <div class="row">
                                         <div class="col-md-5" >
                                             <div class="form-group">
-                                                <input type="text" name="SecurityCode" id="captchacode" class="form-control" placeholder="Security Code"  required>
+                                                <input type="text" name="SecurityCode" id="captchacode" class="form-control" placeholder="Security Code">
                                                 <span id="capspan"></span>
                                             </div>
 

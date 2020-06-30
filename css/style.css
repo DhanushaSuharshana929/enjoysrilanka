@@ -277,7 +277,7 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
      font-weight: 300;
 }
  .header-top-area .header-top-left .header-top-contact li i {
-     margin-right: 10px;
+     margin-right: 1px;
      color: #37b721;
      font-size: 20px;
 }
@@ -1900,12 +1900,11 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
      color: #ffffff;
      text-transform: uppercase;
 }
- .single-package-carasoul:hover .package-long-btn {
+ .single-package-carasoul .package-long-btn {
      opacity: 1;
      visibility: visible;
      bottom: -1px;
-}
- .single-package-carasoul:hover .package-location span {
+} .single-package-carasoul:hover .package-location span {
      background: #f17b37;
 }
  .owl-nav div {
