@@ -45,8 +45,9 @@
                         </div>
                         <ul class="recent-post">
                             <li><a href="about-us.php" style="color: white">About Us</a></li>
-                            <li><a href="view-tour-package.php" style="color: white">All Tour Packages</a></li>
-                            <li><a href="destinations.php" style="color: white">Destinations</a></li>
+                            <li><a href="tours.php?type=1" style="color: white">Day Tours</a></li>
+                            <li><a href="tours.php?type=2" style="color: white">Round Tours</a></li>
+                            <li><a href="excursions.php" style="color: white">Excursions</a></li>
                             <li><a href="gallery.php" style="color: white">Gallery</a></li>
                             <li><a href="contact-us.php" style="color: white">Contact</a></li>
                         </ul>
