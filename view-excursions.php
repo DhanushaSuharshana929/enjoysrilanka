@@ -69,7 +69,7 @@ $ATTRACTION = new Attraction($id);
                                 <ul>
                                     <li><a href="index.php">Home</a>
                                     </li>
-                                    <li><a href="#">Destinations</a>
+                                    <li><a href="#">Excursions</a>
                                     </li>
                                     <li class="active"><a href="#"><?php echo $ATTRACTION->title; ?></a>
                                     </li>
@@ -160,7 +160,7 @@ $ATTRACTION = new Attraction($id);
                                         <div class="col-md-12 col-sm-12">
                                             <div class="tour-description">
                                                 <h4><?php echo $ATTRACTION->title ?></h4>
-                                                <p><?php echo $ATTRACTION->description ?></p>
+                                                <?php echo $ATTRACTION->description ?>
                                             </div>
 
                                         </div><!-- left-content -->
@@ -194,7 +194,7 @@ $ATTRACTION = new Attraction($id);
                                 </div>
 
                                 <div class="col-md-8">
-                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><h4>
+                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><h4>
                                             <?php echo $attraction ['title']; ?>
                                         </h4></a>
                                     <?php echo substr($attraction['description'], 0, 55) . '..'; ?>

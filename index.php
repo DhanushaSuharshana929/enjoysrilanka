@@ -110,23 +110,22 @@ $ABOUT = new Page(1);
                         $TOUR_PACKAGE = new TourPackage(NULL);
                         foreach ($TOUR_PACKAGE->all()as $tour_package) {
                             ?>
+                        
                             <div class="single-package-carasoul">
                                 <div class="package-location">
-                                    <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt="">
+                                    <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>"><img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""></a>
 
                                 </div>
 
                                 <div class="package-details">
                                     <div class="package-places">
-                                        <h4><?php echo $tour_package['title']; ?></h4>
+                                        <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>"><h4><?php echo $tour_package['title']; ?></h4></a>
                                         <span> <i class="fa fa-clock-o"></i> <?php echo $tour_package['dates']; ?></span>
                                         <div class="details">
                                             <p><?php echo substr($tour_package['short_description'], 0, 83) . '..'; ?></p>
                                         </div>
                                     </div>
-                                    <div class="package-ratings-review">
-
-                                    </div>
+                                 
                                   
                                 </div>
 
@@ -155,7 +154,7 @@ $ABOUT = new Page(1);
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="section-title text-center">
-                            <h2>Most popular destination</h2>
+                            <h2>Most popular excursions</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus orci vel nibh aliquam laoreet Aenean accumsan </p>
                         </div>
                     </div>
@@ -169,14 +168,14 @@ $ABOUT = new Page(1);
 
                             <div class="single-destination">
                                 <figure>
-                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
+                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
                                     </a>
                                     <figcaption>
-                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                        <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
                                     </figcaption>
                                 </figure>
                                 <div class="des-city">
-                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'], 0, 16) . '..'; ?></a>
+                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'], 0, 16) . '..'; ?></a>
 
                                 </div>
                             </div> <!-- single popular destination  end-->

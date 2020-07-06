@@ -56,7 +56,7 @@
                                      <?php } ?>
                                 </ul>
                             </li>
-                            <li><a href="destinations.php">Destinations</a>
+                            <li><a href="excursions.php">Excursions</a>
                             </li>
                             <li><a href="gallery.php">Gallery</a>
                             </li>

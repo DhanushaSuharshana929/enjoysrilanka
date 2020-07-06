@@ -59,10 +59,10 @@ include './class/include.php';
                     <div class="row">
                         <div class="col-sm-12 col-md-12">
                             <div class="bredcrums-content">
-                                <h2>Destinations</h2>
+                                <h2>Excursions</h2>
                                 <ul>
-                                    <li><a href="index-2.html">Home</a></li>
-                                    <li class="active"><a href="#">Destinations</a></li>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li class="active"><a href="#">Excursions</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -86,14 +86,14 @@ include './class/include.php';
                         <div class="col-md-3 col-sm-6 col-xs-12 single-item destination">
                             <div class="single-destionation-5">
                                 <div class="destination-5-image">
-                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""></a>
+                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""></a>
                                 </div>
                                 <div class="destination-5-description">
 
                                     <h3><?php echo substr($attraction['title'],0,12).'..'; ?></h3>
 
                                     <div class="discount-package-4-btn">
-                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
+                                        <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>
                                     </div>
                                 </div>
                             </div>
