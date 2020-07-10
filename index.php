@@ -51,6 +51,7 @@ $ABOUT = new Page(1);
         <link rel="stylesheet" href="css/responsive.css">
         <!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body> 
 
@@ -70,7 +71,7 @@ $ABOUT = new Page(1);
         <section class="section-paddings welcome-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden-sm hidden-xs">
                         <div class="single-welcome-area">
                             <div class="single-imag">
                                 <img src="images/welcome/1.jpg" alt="" class="img-thumbnail img-responsive">
@@ -83,11 +84,12 @@ $ABOUT = new Page(1);
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
                                 <h2>Welcome to Enjoy Sri Lanka</h2>
-
+                                <h4> JOIN WITH US AND GET UNFORGETABLE MEMORY..!</h4>
                                 <div class="welcome-content">
                                     <p><?php echo $ABOUT->description ?></p>
-                                    <a href="about-us.php" class="read-more hvr-fade">Read More</a>
+                                    <a href="about-us.php" class="read-more hvr-fade" style="margin-top: 15px;">Read More</a>
                                 </div>
+
                             </div>
                         </div>
                     </div>  <!-- welcome area right side end -->
@@ -101,7 +103,7 @@ $ABOUT = new Page(1);
                     <div class="col-sm-12">
                         <div class="section-title-version-2-white text-center">
                             <h2>Let’s Enjoy Excellent Tour Packages</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum </p>
+                            <p>We are dedicated to make it a memorable one for you whichever is your holiday package</p>
                         </div>
                     </div>
                     <!-- tour packages carosual -->
@@ -110,7 +112,7 @@ $ABOUT = new Page(1);
                         $TOUR_PACKAGE = new TourPackage(NULL);
                         foreach ($TOUR_PACKAGE->all()as $tour_package) {
                             ?>
-                        
+
                             <div class="single-package-carasoul">
                                 <div class="package-location">
                                     <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>"><img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""></a>
@@ -122,11 +124,11 @@ $ABOUT = new Page(1);
                                         <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>"><h4><?php echo $tour_package['title']; ?></h4></a>
                                         <span> <i class="fa fa-clock-o"></i> <?php echo $tour_package['dates']; ?></span>
                                         <div class="details">
-                                            <p><?php echo substr($tour_package['short_description'], 0, 83) . '..'; ?></p>
+                                            <p><?php echo substr($tour_package['short_description'], 0, 75) . '..'; ?></p>
                                         </div>
                                     </div>
-                                 
-                                  
+
+
                                 </div>
 
                                 <div class="package-long-btn hvr-shutter-out-horizontal">
@@ -145,146 +147,140 @@ $ABOUT = new Page(1);
             </div>
         </section> <!-- Tour Packages end here -->
 
-
-
-
-
         <section class="pb-70 pt-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="section-title text-center">
-                            <h2>Most popular excursions</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus orci vel nibh aliquam laoreet Aenean accumsan </p>
+                            <h2>Most Popular Excursions</h2>
+                            <p>Choose one of our best popular tours and excursions in SriLanka. Come and join with us...  </p>
                         </div>
                     </div>
                 </div>
-                <div class="destination-slider-active owl-carousel">
-                    <?php
+
+
+                <div id="owl-demo" class="owl-carousel owl-theme destination-slider">
+<?php
                     $ATTRACTION = new Attraction(NULL);
                     foreach ($ATTRACTION->all() as $key => $attraction) {
-                        if ($key < 6) {
+                        if ($key < 10) {
                             ?>
-
-                            <div class="single-destination">
-                                <figure>
-                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
+                 
+                        <div class="single-destination">
+                            <figure>
+                                <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
                                     </a>
-                                    <figcaption>
-                                        <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
-                                    </figcaption>
-                                </figure>
-                                <div class="des-city">
-                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'], 0, 16) . '..'; ?></a>
+                                <figcaption>
+                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>" class="travel-booking-btn hvr-shutter-out-horizontal">Read More</a>
+                                </figcaption>
+                            </figure>
+                            <div class="des-city">
+                                <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>"><?php echo substr($attraction['title'], 0, 23) . '..'; ?></a>
+                            </div>
+                        </div> <!-- single popular destination  end-->
 
-                                </div>
-                            </div> <!-- single popular destination  end-->
-
-
-                            <?php
+                        <?php
                         }
                     }
                     ?>
-
-
-
-
-
+                 
                 </div>
-            </div>
-        </section> <!-- end popular destination-->
 
-        <!-- testimonial area start here -->
-        <section class="testimonial-area-5">
-            <div class="testimonial-5-active owl-carousel">
-                <!-- single testimonial start -->
+            </div>
+
+        </div>
+    </section> <!-- end popular destination-->
+
+    <!-- testimonial area start here -->
+    <section class="testimonial-area-5">
+        <div class="testimonial-5-active owl-carousel">
+            <!-- single testimonial start -->
+
+            <?php
+            $COMMENT = new Comments(NULL);
+            foreach ($COMMENT->activeComments() as $comment) {
+                ?>
+                <div class="single-testimonial">
+                    <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" class="img-responsive img-circle">
+                    <div class="testimonial-messages">
+                        <p><?php echo $comment['comment']; ?></p>
+                    </div>
+                    <div class="author-bio">
+                        <h3><?php echo $comment['name']; ?></h3>
+                        <span><?php echo $comment['country']; ?></span>
+                    </div>
+                </div>
 
                 <?php
-                $COMMENT = new Comments(NULL);
-                foreach ($COMMENT->activeComments() as $comment) {
-                    ?>
-                    <div class="single-testimonial">
-                        <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" class="img-responsive img-circle">
-                        <div class="testimonial-messages">
-                            <p><?php echo $comment['comment']; ?></p>
-                        </div>
-                        <div class="author-bio">
-                            <h3><?php echo $comment['name']; ?></h3>
-                            <span><?php echo $comment['country']; ?></span>
-                        </div>
-                    </div>
-
-                    <?php
-                }
-                ?>
-                <!-- single testimonial end -->
-            </div>
-        </section><!-- testimonial area end here -->
+            }
+            ?>
+            <!-- single testimonial end -->
+        </div>
+    </section><!-- testimonial area end here -->
 
 
-        <?php
-        include ("./footer.php");
-        ?>
-        <!-- end footer -->
+    <?php
+    include ("./footer.php");
+    ?>
+    <!-- end footer -->
 
-        <div class="to-top pos-rtive">
-            <a href="#"><i class = "fa fa-angle-up"></i></a>
-        </div><!-- Scroll to top-->
+    <div class="to-top pos-rtive">
+        <a href="#"><i class = "fa fa-angle-up"></i></a>
+    </div><!-- Scroll to top-->
 
-        <!-- ============================
-                    JavaScript Files
-        ============================= -->
-        <!-- jquery -->
-        <script src="js/vendor/jquery-3.2.0.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- slick js -->
-        <script src="js/slick.min.js"></script>
-        <!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.min.js"></script>
-        <!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- counter js -->
-        <script src="js/jquery.counterup.min.js"></script>
-        <!-- Countdown js -->
-        <script src="js/jquery.countdown.min.js"></script>
-        <!-- waypoints js -->
-        <script src="js/jquery.waypoints.min.js"></script>
-        <!-- Isotope js -->
-        <script src="js/isotope.pkgd.min.js"></script>
-        <!-- magnific js -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- Image loaded js -->
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <!-- chossen js -->
-        <script src="js/chosen.jquery.min.js"></script>
-        <!-- Revolution JS -->
-        <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
-        <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
-        <script src="js/assets/revolution/revolution.js"></script>
-        <!-- plugin js -->
-        <script src="js/plugins.js"></script>
-        <!-- select2 js -->
-        <script src="js/select2.min.js"></script>    
-        <script src="js/colors.js"></script>
-        <!-- customSelect Js -->
-        <script src="js/jquery-customselect.js"></script>
-        <!-- custom js -->
-        <script src="js/custom.js"></script>
-    </body>
+    <!-- ============================
+                JavaScript Files
+    ============================= -->
+    <!-- jquery -->
+    <script src="js/vendor/jquery-3.2.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <!-- jquery-ui js -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <!-- counter js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Countdown js -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- waypoints js -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- magnific js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Image loaded js -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- chossen js -->
+    <script src="js/chosen.jquery.min.js"></script>
+    <!-- Revolution JS -->
+    <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+    <script src="js/assets/revolution/revolution.js"></script>
+    <!-- plugin js -->
+    <script src="js/plugins.js"></script>
+    <!-- select2 js -->
+    <script src="js/select2.min.js"></script>    
+    <script src="js/colors.js"></script>
+    <!-- customSelect Js -->
+    <script src="js/jquery-customselect.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
 
-    <!-- Mirrored from getnajmul.com/theme/trabble/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 07:32:11 GMT -->
 </html>

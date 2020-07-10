@@ -18,7 +18,7 @@ $ABOUT = new Page(2);
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon_enjoysrilanka.png">
         <!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -80,7 +80,7 @@ $ABOUT = new Page(2);
                         <div class="single-welcome-text">
                             <div class="section-title-version-2">
                                 <h2>Welcome to Enjoy Sri Lanka</h2>
-                                <h5>Lorem ipsum dolor sitp amet conspectetuer adipiscing elit sed diam nonummy nibh euismody tincidunt ut laoree.</h5>
+                                <h5>The best travel company for Sri Lanka holiday to explore the beauty of Sri Lanka.</h5>
                                 <div class="welcome-content">
                                     <p><?php echo $ABOUT->description ?></p>
                                     

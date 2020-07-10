@@ -16,11 +16,11 @@ $ATTRACTION = new Attraction($id);
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
         <meta name="keywords" content="Tour, Travel, Travel Agency Template">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trabble - Tour, Travel & Travel Agency Template</title>
+        <title>Enjoy Sri Lanka - Tour & Travel  Agency Company</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon_enjoysrilanka.png">
         <!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -60,7 +60,7 @@ $ATTRACTION = new Attraction($id);
 
         <!-- blog breadcrumb version one strat here -->
         <section class="breadcrumb-blog-version-one">
-            <div class="single-bredcurms" style="background-image:url('images/banner/banner.png');">
+            <div class="single-bredcurms view-excursion-padding" style="background-image:url('images/banner/banner.png');">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -144,42 +144,27 @@ $ATTRACTION = new Attraction($id);
 
 
                             </div>
+                            <div class="single-package-title">
+                                <h4><?php echo $ATTRACTION->title ?></h4>
+
+                            </div>
+                            <div class="tab-content" style="margin-bottom:25px;">
+                                <div class="row">
+                                    <div class="chosse-packge">
+
+
+                                        <div class="tour-description"style="padding-left: 4px">
+                                            <?php echo $ATTRACTION->description ?>  </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div><!-- tab menu strat -->
 
 
 
                         <!-- tab content start -->
-                        <div class="row">
-                            <!-- tabs content -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="description">
-                                    <div class="row">
-                                        <!-- left content -->
-
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="tour-description">
-                                                <h4><?php echo $ATTRACTION->title ?></h4>
-                                                <?php echo $ATTRACTION->description ?>
-                                            </div>
-
-                                        </div><!-- left-content -->
-
-
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <!-- video tab content start -->
-
-
-                                <!-- video tab content start -->
-
-                            </div><!-- tabs content-->
-                        </div><!-- tab content end -->
+                        <!-- tab content end -->
 
                     </div><!-- single package tab with details -->
 
@@ -190,7 +175,9 @@ $ATTRACTION = new Attraction($id);
                         <div class="col-md-4 col-sm-12">
                             <div class="row " style="margin-bottom: 15px;">
                                 <div class="col-md-4">
-                                    <img src="./upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""  >
+                                    <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>">
+                                     <img src="./upload/attraction/<?php echo $attraction['image_name']; ?>" alt=""  >
+                                    </a>
                                 </div>
 
                                 <div class="col-md-8">

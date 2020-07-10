@@ -15,7 +15,7 @@ include './class/include.php';
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon_enjoysrilanka.png">
         <!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -78,7 +78,7 @@ include './class/include.php';
         <section class="section-paddings">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12 hidden-sm hidden-xs">
                         <div class="contact-title">
                             <h2>Our Office</h2>
                         </div>
