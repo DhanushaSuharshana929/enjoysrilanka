@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once(dirname(__FILE__) . '/../class/include.php');
 
 //if (Input::exists()) {
@@ -52,7 +52,7 @@ include_once(dirname(__FILE__) . '/../class/include.php');
         <div class="login-box">
             <div class="logo">
                 <a href="javascript:void(0);">Web <b>Mananger</b></a>
-                <small>www.srilankapetertours.com</small>
+                <small>enjoy-srilanka.com</small>
             </div>
             <div class="card">
                 <div class="body">

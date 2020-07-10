@@ -4520,3 +4520,15 @@ Tags: 	hotel, resort, tour, tourism, tourist, tours website, travel, traveler, t
 .related-title h2 {
     margin-left: -32px;
 }
+
+
+    #owl-demo .item{
+      margin: 3px;
+    }
+    #owl-demo .item img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+

@@ -16,7 +16,7 @@ include './class/include.php';
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon_enjoysrilanka.png">
         <!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -90,7 +90,7 @@ include './class/include.php';
                                 </div>
                                 <div class="destination-5-description">
 
-                                    <h3><?php echo substr($attraction['title'],0,12).'..'; ?></h3>
+                                    <h3><?php echo substr($attraction['title'],0,23).'..'; ?></h3>
 
                                     <div class="discount-package-4-btn">
                                         <a href="view-excursions.php?id=<?php echo $attraction['id'] ?>" class="travel-primary-btn hvr-shutter-out-horizontal">Read More</a>

@@ -18,11 +18,11 @@ $TOUR_PACKAGES = new TourPackage(NULL);
         <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
         <meta name="keywords" content="Tour, Travel, Travel Agency Template">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trabble - Tour, Travel & Travel Agency Template</title>
+        <title>Enjoy Sri Lanka - Tour & Travel  Agency Company</title>
         <!-- Google Fonts Includes -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <!-- Favi icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon_enjoysrilanka.png">
         <!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- animate css -->
@@ -54,7 +54,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        
+
         <?php
         include ("./header.php");
         ?>
@@ -98,8 +98,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
                                 </div>
 
                                 <div class="blog-content">
-                                    <p><strong></strong>
-                                    </p>
+
                                 </div>
 
 
@@ -113,10 +112,10 @@ $TOUR_PACKAGES = new TourPackage(NULL);
                                     <div class="chosse-packge">
 
 
-                                        <div class="tour-description">
+                                        <div class="tour-description"style="padding-left: 4px">
                                             <?php echo $tourdate['description']; ?>  </div>
                                     </div>
- 
+
                                     <?php
                                     $TOUR_DATE_PHOTO = new TourDatePhoto(NULL);
                                     foreach ($TOUR_DATE_PHOTO->getTourDatePhotosById($tourdate['id']) as $tour_date_photo) {
@@ -125,7 +124,7 @@ $TOUR_PACKAGES = new TourPackage(NULL);
 
                                         <div class="col-md-3">
 
-                                            <div class="single-travel-blog">
+                                            <div class="single-travel-blog gal-margin-bottom">
                                                 <div class="gallery">
                                                     <a href="upload/tour-package/date/gallery/<?php echo $tour_date_photo ['image_name']; ?>" class="big"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date_photo ['image_name']; ?>" alt=""></a>
 
@@ -150,24 +149,33 @@ $TOUR_PACKAGES = new TourPackage(NULL);
 
                     </div> 
 
+                    <div class="col-md-4 col-sm-12" >
+                        <div class="single-package-title" style="margin-bottom: 20px;">
+                            <h3>Other Tours</h3>
 
+                        </div>
+                    </div>
 
                     <?php
                     foreach ($TOUR_PACKAGES->allToursByType($TOUR_PACKAGE->tour_type) as $tours) {
                         ?>
 
-                        <div class="col-md-4 col-sm-12" >
+                    <div class="col-md-4 col-sm-12">
+
                             <div class="row " style="margin-bottom: 15px;">
+
                                 <div class="col-md-4">
-                                    <img src="upload/tour-package/<?php echo $tours['image_name']; ?>" alt=""  >
+                                    <a href="view-tour-package.php?id=<?php echo $tours['id'] ?>">
+                                        <img src="upload/tour-package/<?php echo $tours['image_name']; ?>" alt=""  >
+                                    </a>
                                 </div>
 
-                                <div class="col-md-8">
+                                <div class="col-md-8 other-tours">
                                     <a href="view-tour-package.php?id=<?php echo $tours['id'] ?>"><h4>
                                             <?php echo $tours['title']; ?>
                                         </h4></a>
-                                    
-                               <?php echo substr($tours['description'],0,60).'..'; ?>
+
+                                    <?php echo substr($tours['description'], 0, 60) . '..'; ?>
                                 </div>
 
                             </div>

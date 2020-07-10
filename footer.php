@@ -13,7 +13,7 @@
                             <ul class="footer-contact">
                                 <li><img class="map" src="images/icon/map.png" alt="">Talpe North Unawatuna</li>
                                 <li><img class="map" src="images/icon/phone.png" alt="">+94 777 719 380</li>
-                                <li><img class="map" src="images/icon/gmail.png" alt="">office@enjoy-srilanka.com</li>
+                                <li><a href="mailto:office@enjoy-srilanka.com" style="color: white"><img class="map" src="images/icon/gmail.png" alt="">office@enjoy-srilanka.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
 
 
 
-            <div class="col-md-2 col-sm-6">
+            <div class="col-md-2 col-sm-6 hidden-sm hidden-xs">
                 <div class="single-footer">
                     <div class="single-recent-post">
                         <div class="footer-title">
@@ -57,42 +57,32 @@
 
             <!-- footer destination -->
             <div class="col-md-4 col-sm-6">
+
                 <div class="single-footer">
-                    <div class="footer-title">
+                    <div class="footer-title gal-title">
                         <h3>Gallery</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
+                    <div class="row" style="margin-top: 25px;">
+                        <?php
+                        $ALBUM_PHOTO = new AlbumPhoto(NULL);
+                        foreach ($ALBUM_PHOTO->all() as $key => $album_photo) {
+                            if ($key < 6) {
+                                ?>
+                                <div class="col-md-4 col-xs-4" style="margin-bottom: 25px;">
 
-                            <img src="images/destination/sigiriya.jpg" alt="">
-                        </div>
+                                    <a href="gallery.php?id=<?php echo $album_photo['image_name']; ?>"> <img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name']; ?>" alt=""></a>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
 
-                        <div class="col-md-4">
-                            <img src="images/destination/waterrafting.jpg" alt="">
-                        </div>
-
-                        <div class="col-md-4">
-                            <img src="images/destination/yala1.jpg" alt="">
-                        </div>
-
-                    </div>
-
-                    <div class="row" style="margin-top: 25px">
-                        <div class="col-md-4">
-
-                            <img src="images/destination/ella.jpg" alt="">
-                        </div>
-
-                        <div class="col-md-4">
-                            <img src="images/destination/dambulla.jpg" alt="">
-                        </div>
-
-                        <div class="col-md-4">
-                            <img src="images/destination/nuwaraeliya.jpg" alt="">
-                        </div>
 
                     </div>
+
+
                 </div>
+
             </div>	<!-- footer destination -->
 
 
@@ -103,12 +93,12 @@
             <div class="col-md-3 col-sm-6">
                 <div class="single-footer">
                     <div class="footer-title">
-                        <a href="#"><img src="images/enjoysrilankalogo.png" alt="">
+                        <a href="#"><img src="images/enjoysrilankalogo.png" class="logo_footer" alt="">
                         </a>
                     </div>
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <p>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales.<br/>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales.</p>
+                            <p style="text-align: justify">Enjoy Sri Lanka is one of the best travel company in Sri Lanka. Experience the highlights of Sri Lanka on a round tours and day tours. We will be pleased to arrange tours to the fascinating interior of our country and give you hints about what you can explore.</p>
                         </div>
 
                     </div>

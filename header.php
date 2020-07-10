@@ -7,7 +7,7 @@
                     <div class="col-sm-8">
                         <ul class="header-top-contact">
                             <li><i class="fa fa-phone" aria-hidden="true"></i> +94 777 719 380 / +94 912 250 510 </li>
-                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>office@enjoy-srilanka.com</li>
+                            <li><a href="mailto:office@enjoy-srilanka.com" style="color: white"><i class="fa fa-envelope-o" aria-hidden="true"></i> office@enjoy-srilanka.com</a></li>
                         </ul>
                     </div>
 
@@ -57,6 +57,8 @@
                                 </ul>
                             </li>
                             <li><a href="excursions.php">Excursions</a>
+                            </li>
+                            <li><a href="our-team.php">Our Team</a>
                             </li>
                             <li><a href="gallery.php">Gallery</a>
                             </li>
